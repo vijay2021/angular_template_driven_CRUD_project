@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div>
+    <h1>Users list</h1>
+    <h3><a routerLink="/user-action/new">Add User</a></h3>
+    </div>
+  <table class="table table-hover" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Pincode</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.state}}</td>
+        <td>{{user.country}}</td>
+        <td>{{user.pincode}}</td>
+        <td><a routerLink="/user-action/edit/{{ user.id }}">Edit</a> | <a style="cursor: pointer;" (click)="onDeleteUser(user.id)">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <app-edit-user></app-edit-user> -->
+<!-- <p>You can pass an existing component as content of the modal window. In this case remember to add content component
+as an <code>entryComponents</code> section of your <code>NgModule</code>.</p> -->
