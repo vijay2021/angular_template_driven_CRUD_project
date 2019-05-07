@@ -1,1 +1,76 @@
 run npm install
+
+
+ng new projectName
+
+ng generate module app-routing --flat --module=app
+imports: [ RouterModule.forRoot(routes) ],
+
+import { RouterModule, Routes } from '@angular/router';
+
+@NgModule({
+  exports: [ RouterModule ]
+})
+
+
+import AppRoutingModule  at module.ts
+
+
+
+ng g c dashboard --spec false
+ng g c users --spec false
+ng g c users/userAddress --spec false
+ng g c includes/head --spec false
+ng g c includes/header --spec false
+ng g c includes/left --spec false
+ng g c includes/footer --spec false
+
+
+ng g s users/users
+
+
+#npm install bootstrap --save
+npm install bootstrap@4.0.0-beta.2 --save --save-exact
+npm install --save @ng-bootstrap/ng-bootstrap
+
+
+src/style.css
+@import "~bootstrap/dist/css/bootstrap.css";  
+
+
+npm install jquery --save
+npm install datatables.net --save
+npm install datatables.net-dt --save
+npm install datatables.net-bs4 --save
+npm install datatables.net-select-bs --save
+npm install angular-datatables --save
+npm install @types/jquery --save-dev
+npm install @types/datatables.net --save-dev
+
+
+
+npm install --save @angular/material @angular/cdk @angular/animations
+import in styles.css
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+
+angular.json
+
+"options": {
+            "styles": [
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js"
+            ],
+
+import { DataTablesModule } from 'angular-datatables';
+
+
+
+
+npm install --save-dev @angular/http
+
+
